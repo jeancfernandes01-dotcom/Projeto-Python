@@ -1,4 +1,3 @@
-import math
 cliente = str(input('Nome do cliente: ')).upper()
 corte_cabelo = 40.00
 corte_barba = 35.00
@@ -8,10 +7,10 @@ sombrancelha = 10.00
 print('\nOla! é um prazer ter voçê em nossa barbearia: {}\nsegue abaixo a lista de preços!\nCorte de cabelo R$ {:.2f}\nBarba R$ {:.2f}\nCorte so maquina R$ {:.2f}\nSombrancelha R$ {:.2f}'.format(
         cliente, corte_cabelo, corte_barba, corte_maquina, sombrancelha))
 
-combo1 = math.floor((corte_cabelo + corte_barba + sombrancelha) * 0.9)
-combo2 = math.floor((corte_cabelo + corte_barba) * 0.9)
-combo3 = math.floor((corte_cabelo + sombrancelha) * 0.9)
-combo4 = math.floor((corte_barba + sombrancelha) * 0.9)
+combo1 = (corte_cabelo + corte_barba + sombrancelha) * 0.9)
+combo2 = (corte_cabelo + corte_barba) * 0.9)
+combo3 = (corte_cabelo + sombrancelha) * 0.9)
+combo4 = (corte_barba + sombrancelha) * 0.9)
 
 print('\nCombo 1 (Cabelo,Barba,Sombrancelha) ficaria um total: R$ {:.2f}'.format(combo1))
 print('Combo 2 (Cabelo,Barba) ficaria um total: R$ {:.2f}'.format(combo2))
@@ -30,10 +29,10 @@ if opção == 9:
 [ 2 ] - BARBA R$ 35.00
 [ 3 ] - CORTE SÓ MAQUINA
 [ 4 ] - SOMBRANCELHA R$ 10.00
-[ 5 ] - COMBO 1 (Cabelo,barba,sombrancelha) R$ 76.00
-[ 6 ] - COMBO 2 (Cabelo,barba) R$ 68.00
+[ 5 ] - COMBO 1 (Cabelo,barba,sombrancelha) R$ 76.50
+[ 6 ] - COMBO 2 (Cabelo,barba) R$ 67.50
 [ 7 ] - COMBO 3 (Cabelo,Sombrancelha) R$ 45.00
-[ 8 ] - COMBRO 4 (Barba,Sombrancelha) R$ 40.00''')
+[ 8 ] - COMBRO 4 (Barba,Sombrancelha) R$ 40.50''')
 
 
     serviços = int(input('Qual voce gostaria? '))
